@@ -1,0 +1,47 @@
+{
+  "title": "Antalya Gezi Rehberi: Akdeniz'in Tarihi, Doğa ve Sahil Durakları",
+  "subtitle": "Turizmin Başkentinde Antik Kentler, Büyüleyici Şelaleler ve Masmavi Plajlar",
+  "description": "Lidya, Pamfilya ve Roma medeniyetlerinin zengin mirası, muhteşem falezleri ve turkuaz deniz tasviriyle Antalya'yı adım adım keşfedin.",
+  "hero_image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=80&fm=webp",
+  "badge": "Akdeniz Kültür & Tatil Rehberi",
+  "badge_icon": "fa-solid fa-sun",
+  "stats": [
+    {
+      "value": "19",
+      "label": "İlçe",
+      "icon": "fa-solid fa-map-location-dot"
+    },
+    {
+      "value": "20+",
+      "label": "Antik Kent",
+      "icon": "fa-solid fa-building-columns"
+    },
+    {
+      "value": "UNESCO",
+      "label": "Karain & Aspendos",
+      "icon": "fa-solid fa-award"
+    },
+    {
+      "value": "229",
+      "label": "Mavi Bayraklı Plaj",
+      "icon": "fa-solid fa-umbrella-beach"
+    }
+  ],
+  "accommodation": {
+    "title": "Antalya'da Nerede Kalınır? En İyi Konaklama Bölgeleri",
+    "description": "Muratpaşa ve Kaleiçi otantik butik oteller için idealdir. Konyaaltı ve Lara şehir merkezine yakın plaj otelleri sunarken, Belek, Kemer ve Kaş tatil köyü ile doğa odaklı alternatifler vadeder.",
+    "button_text": "Antalya Otel Fırsatlarını Gör",
+    "button_url": "https://gezirotasi.com/antalya-otelleri",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80&fm=webp"
+  },
+  "transportation": {
+    "title": "Şehir İçi Ulaşım & Antalyakart İpuçları",
+    "description": "Antalya Havalimanı'ndan HAVAŞ, Antray tramvay hattı ve 600 numaralı belediye otobüsleri çalışır. Şehir içi otobüs ve tramvaylarda Antalyakart veya temassız kredi kartı kullanılır.",
+    "tips": [
+      "Antalyakart mobil uygulaması veya temassız kredi kartları ile hızlı biniş sağlayabilirsiniz.",
+      "Kaleiçi ve Yat Limanı bölgesini yürüyerek keşfetmeniz önerilir.",
+      "Antray (Tramvay) hattı Havalimanı, Otogar ve Şehir Merkezi'ni kesintisiz birbirine bağlar."
+    ],
+    "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204278.26188219463!2d30.55132924198888!3d36.89868735284307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39aaeddad2fd9%3A0xf00827253507b99c!2sAntalya!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str"
+  }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #059669;
+  --primary-hover: #047857;
+  --bg-slate: #f8fafc;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --border-light: #e2e8f0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-slate);
+  color: var(--text-dark);
+}
+
+.ad-banner-top {
+  width: 100%; max-width: 970px; min-height: 90px; margin: 1.5rem auto;
+  background: #f1f5f9; border: 1px dashed #cbd5e1; border-radius: 0.75rem;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase;
+}
+
+.ad-in-article {
+  width: 100%; min-height: 250px; margin: 2rem 0; background: #f1f5f9;
+  border: 1px dashed #cbd5e1; border-radius: 0.75rem; display: flex;
+  align-items: center; justify-content: center; color: var(--text-muted);
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+}
+
+.cta-affiliate-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  width: 100%; padding: 0.875rem 1.25rem;
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  color: #ffffff; font-weight: 700; font-size: 0.875rem; border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25); transition: all 0.2s ease-in-out;
+}
+
+.cta-affiliate-btn:hover {
+  transform: translateY(-2px); box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
+}
+
+.destination-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.destination-card:hover { transform: translateY(-4px); }
+.aspect-map { aspect-ratio: 16 / 9; width: 100%; border-radius: 0.75rem; overflow: hidden; }
+.hero-overlay { background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.85) 100%); }

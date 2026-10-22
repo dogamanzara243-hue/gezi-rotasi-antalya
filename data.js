@@ -24,7 +24,42 @@ const SPOT_DATA = {
         paragraphs: ["Antalya; pırıl pırıl turkuaz denizi, kilometrelerce uzanan plajları ve binlerce yıllık Likya ile Roma medeniyetlerinin mirasıyla Türkiye'nin turizm başkentidir.", "Tarihi Hadrian Kapısı'ndan geçerek Kaleiçi'nin dar sokaklarında kaybolabilir, falezlerden denize dökülen Düden Şelalesi'ni izleyebilirsiniz."],
         visitorNotes: [{"label": "En İyi Zaman", "value": "Nisan - Kasım"}, {"label": "Deniz Sezonu", "value": "Mayıs - Ekim Arası Muhteşem"}, {"label": "MüzeKart", "value": "Tüm Antik Kentlerde Geçerli"}]
     },
-    whyVisit: {"title": "Neden Antalya'ya Gitmelisiniz?", "subtitle": "Güneş, turkuaz deniz ve muhteşem antik kentler bir arada", "cards": [{"icon": "fa-solid fa-water", "title": "Düden & Kurşunlu", "description": "Falezlerden denize dökülen büyüleyici şelaleler ve doğa parkları."}, {"icon": "fa-solid fa-archway", "title": "Tarihi Kaleiçi", "description": "Osmanlı konakları, Yat Limanı ve Üçkapılar ile tarihi atmosfer."}, {"icon": "fa-solid fa-masks-theater", "title": "Aspendos & Perge", "description": "Akustiği mükemmel korunan antik tiyatro ve devasa Roma kenti."}]},
+    
+    whyVisit: {
+        title: "Antalya Keşif Rotaları",
+        subtitle: "Şehrin en gözde mekanlarını tematik kategorilere göre keşfedin",
+        cards: [
+            {
+                icon: "fa-solid fa-landmark",
+                title: "Tarihi Yerler",
+                description: "Yüzyıllık anıtlar, kaleler, müzeler ve köklü medeniyet izleri.",
+                linkText: "Tarihi Keşfet",
+                url: "#must-see-items"
+            },
+            {
+                icon: "fa-solid fa-city",
+                title: "Modern Yerler",
+                description: "Şehrin en popüler meydanları, alışveriş merkezleri ve plazas.",
+                linkText: "Moderni İncele",
+                url: "#must-see-items"
+            },
+            {
+                icon: "fa-solid fa-gem",
+                title: "Sofistike Yerler",
+                description: "Seçkin kafeler, sanat galerileri ve nezih buluşma noktaları.",
+                linkText: "Sofistike Noktalar",
+                url: "#where-to-stay-title"
+            },
+            {
+                icon: "fa-solid fa-tree",
+                title: "Doğal Güzellikler",
+                description: "Parklar, sahil şeritleri, kanyonlar ve nefis manzara noktaları.",
+                linkText: "Doğayı Gör",
+                url: "#transport-title"
+            }
+        ]
+    },
+     {"icon": "fa-solid fa-archway", "title": "Tarihi Kaleiçi", "description": "Osmanlı konakları, Yat Limanı ve Üçkapılar ile tarihi atmosfer."}, {"icon": "fa-solid fa-masks-theater", "title": "Aspendos & Perge", "description": "Akustiği mükemmel korunan antik tiyatro ve devasa Roma kenti."}]},
     mustSee: {
         title: "Görülmesi Gereken Öne Çıkan Noktalar",
         items: [{"category": "Tarih", "title": "Kaleiçi & Üçkapılar", "description": "Hadrianus Kapısı ve tarihi yat limanı."}, {"category": "Doğa", "title": "Düden Şelalesi", "description": "Denize döküldüğü noktada büyüleyici falez manzarası."}, {"category": "Antik", "title": "Aspendos Tiyatrosu", "description": "Dünyanın en iyi korunan antik tiyatrolarından biri."}, {"category": "Plaj", "title": "Kaputaş & Konyaaltı", "description": "Kristal berraklığında turkuaz deniz ve plajlar."}]

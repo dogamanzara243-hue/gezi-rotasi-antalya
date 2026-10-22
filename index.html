@@ -57,6 +57,23 @@
   </div>
 
   <main class="max-w-7xl mx-auto px-4 flex-grow w-full py-4">
+
+        <!-- Dinamik Arama ve Kategori Filtreleme Alanı -->
+        <div id="dynamic-search-filter-section" class="mb-10 max-w-4xl mx-auto px-2">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="relative w-full md:w-1/2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                    <input type="text" id="destination-search-input" placeholder="Mekân, semt veya kategori ara..." class="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
+                </div>
+                <div class="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto pb-1 md:pb-0 text-xs font-medium" id="category-filter-buttons">
+                    <button data-filter="all" class="filter-btn active bg-slate-900 text-white px-3.5 py-2 rounded-xl transition-all">Tümü</button>
+                    <button data-filter="history" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2 rounded-xl transition-all">Tarih</button>
+                    <button data-filter="sea" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2 rounded-xl transition-all">Manzara</button>
+                    <button data-filter="museum" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2 rounded-xl transition-all">Müze</button>
+                </div>
+            </div>
+        </div>
+
     <section id="hero-section" class="relative rounded-3xl overflow-hidden mb-12 bg-cover bg-center shadow-xl hero-overlay">
       <div class="relative z-10 p-6 sm:p-12 lg:p-16 max-w-4xl">
         <span id="hero-badge" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-500/90 text-white mb-6"></span>
@@ -92,6 +109,64 @@
         });
     });
 </script>
+
+
+    <!-- Interaktif Arama, Filtreleme ve Back to Top Butonu Scripti -->
+    <button id="back-to-top-btn" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white p-3.5 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 focus:outline-none" title="Yukarı Çık">
+        <i class="fa-solid fa-arrow-up text-base"></i>
+    </button>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Back to top butonu kontrolü
+        const topBtn = document.getElementById("back-to-top-btn");
+        if(topBtn) {
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 300) {
+                    topBtn.classList.remove("opacity-0", "pointer-events-none");
+                    topBtn.classList.add("opacity-100");
+                } else {
+                    topBtn.classList.add("opacity-0", "pointer-events-none");
+                    topBtn.classList.remove("opacity-100");
+                }
+            });
+            topBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+
+        // Canlı Arama ve Filtreleme Mantığı
+        const searchInput = document.getElementById("destination-search-input");
+        const filterBtns = document.querySelectorAll(".filter-btn");
+
+        function filterContent() {
+            const query = searchInput ? searchInput.value.toLowerCase() : "";
+            const activeBtn = document.querySelector(".filter-btn.active");
+            const filterValue = activeBtn ? activeBtn.getAttribute("data-filter") : "all";
+
+            const cards = document.querySelectorAll("#why-visit-cards > div, #must-see-items > div, .grid > div");
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const matchesSearch = text.includes(query);
+                card.style.display = matchesSearch ? "" : "none";
+            });
+        }
+
+        if(searchInput) searchInput.addEventListener("input", filterContent);
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove("active", "bg-slate-900", "text-white");
+                    b.classList.add("bg-slate-100", "text-slate-700");
+                });
+                btn.classList.add("active", "bg-slate-900", "text-white");
+                btn.classList.remove("bg-slate-100", "text-slate-700");
+                filterContent();
+            });
+        });
+    });
+    </script>
 
 </body>
 </html>

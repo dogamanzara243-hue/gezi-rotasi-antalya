@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dogamanzara243-hue.github.io/gezi-rotasi-antalya/sitemap.xml

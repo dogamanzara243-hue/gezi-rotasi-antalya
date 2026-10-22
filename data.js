@@ -5,7 +5,7 @@ const SPOT_DATA = {
     "category": "Akdeniz & Plaj",
     "hero": {
         "badge": "Türk Rivierası",
-        "coverImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=80&fm=webp",
+        "coverImage": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1600&q=80&fm=webp&q=antalya,turkey",
         "stats": [
             {
                 "label": "Ziyaretçi",
@@ -128,7 +128,7 @@ const SPOT_DATA = {
         "title": "Ulaşım Bilgileri",
         "tip": "Şehir içi toplu taşıma kartlarını kullanarak tüm turistik mekanlara kolayca ulaşabilirsiniz.",
         "mapUrl": "https://maps.google.com/?q=Antalya+Turkey",
-        "mapBgImage": "https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=1200&q=80&fm=webp&q=antalya,turkey",
+        "mapBgImage": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1600&q=80&fm=webp&q=antalya,turkey",
         "methods": [
             {
                 "icon": "fa-solid fa-plane",

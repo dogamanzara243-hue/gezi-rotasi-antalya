@@ -1,76 +1,179 @@
 const SPOT_DATA = {
-    theme: "sea",
-    title: "Antalya Gezi Rehberi",
-    subtitle: "Türk Rivierası, Tarih ve Doğa Cenneti",
-    category: "Plaj & Tarih",
-    hero: {
-        badge: "Akdeniz'in İncisi",
-        coverImage: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=80&fm=webp",
-        stats: [
-            { label: "Ziyaretçi", value: "Yıllık 1M+" },
-            { label: "İdeal Süre", value: "4-5 Gün" },
-            { label: "Puan", value: "4.9 / 5" },
-            { label: "Bölge", value: "Akdeniz Bölgesi" }
-        ]
-    },
-    venueSummary: {
-        badgeTitle: "AKDENİZ GEZİSİ",
-        typeTitle: "Antalya Ziyaret Rehberi",
-        description: "Kaleiçi'nin tarihi sokaklarından Düden Şelalesi'ne, Kaputaş Plajı'ndan Aspendos Tiyatrosu'na unutulmaz tatil rotası.",
-        details: [{"label": "Bölge", "value": "Akdeniz Bölgesi"}, {"label": "Öne Çıkan", "value": "Kaleiçi & Şelaleler"}, {"label": "İdeal Süre", "value": "4-5 Gün"}]
-    },
-    overview: {
-        title: "Antalya Gezi Rehberi Genel Bakış",
-        paragraphs: ["Antalya; pırıl pırıl turkuaz denizi, kilometrelerce uzanan plajları ve binlerce yıllık Likya ile Roma medeniyetlerinin mirasıyla Türkiye'nin turizm başkentidir.", "Tarihi Hadrian Kapısı'ndan geçerek Kaleiçi'nin dar sokaklarında kaybolabilir, falezlerden denize dökülen Düden Şelalesi'ni izleyebilirsiniz."],
-        visitorNotes: [{"label": "En İyi Zaman", "value": "Nisan - Kasım"}, {"label": "Deniz Sezonu", "value": "Mayıs - Ekim Arası Muhteşem"}, {"label": "MüzeKart", "value": "Tüm Antik Kentlerde Geçerli"}]
-    },
-    
-    whyVisit: {
-        title: "Antalya Keşif Rotaları",
-        subtitle: "Şehrin en gözde mekanlarını tematik kategorilere göre keşfedin",
-        cards: [
+    "theme": "sea",
+    "title": "Antalya Gezi Rehberi",
+    "subtitle": "Türk Rivierası, Tarih ve Doğa Cenneti",
+    "category": "Akdeniz & Plaj",
+    "hero": {
+        "badge": "Türk Rivierası",
+        "coverImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=80&fm=webp",
+        "stats": [
             {
-                icon: "fa-solid fa-landmark",
-                title: "Tarihi Yerler",
-                description: "Yüzyıllık anıtlar, kaleler, müzeler ve köklü medeniyet izleri.",
-                linkText: "Tarihi Keşfet",
-                url: "#must-see-items"
+                "label": "Ziyaretçi",
+                "value": "Yıllık 1M+"
             },
             {
-                icon: "fa-solid fa-city",
-                title: "Modern Yerler",
-                description: "Şehrin en popüler meydanları, alışveriş merkezleri ve plazas.",
-                linkText: "Moderni İncele",
-                url: "#must-see-items"
+                "label": "İdeal Süre",
+                "value": "3-5 Gün"
             },
             {
-                icon: "fa-solid fa-gem",
-                title: "Sofistike Yerler",
-                description: "Seçkin kafeler, sanat galerileri ve nezih buluşma noktaları.",
-                linkText: "Sofistike Noktalar",
-                url: "#where-to-stay-title"
+                "label": "Puan",
+                "value": "4.9 / 5"
             },
             {
-                icon: "fa-solid fa-tree",
-                title: "Doğal Güzellikler",
-                description: "Parklar, sahil şeritleri, kanyonlar ve nefis manzara noktaları.",
-                linkText: "Doğayı Gör",
-                url: "#transport-title"
+                "label": "Bölge",
+                "value": "Türkiye"
             }
         ]
     },
-     {"icon": "fa-solid fa-archway", "title": "Tarihi Kaleiçi", "description": "Osmanlı konakları, Yat Limanı ve Üçkapılar ile tarihi atmosfer."}, {"icon": "fa-solid fa-masks-theater", "title": "Aspendos & Perge", "description": "Akustiği mükemmel korunan antik tiyatro ve devasa Roma kenti."}]},
-    mustSee: {
-        title: "Görülmesi Gereken Öne Çıkan Noktalar",
-        items: [{"category": "Tarih", "title": "Kaleiçi & Üçkapılar", "description": "Hadrianus Kapısı ve tarihi yat limanı."}, {"category": "Doğa", "title": "Düden Şelalesi", "description": "Denize döküldüğü noktada büyüleyici falez manzarası."}, {"category": "Antik", "title": "Aspendos Tiyatrosu", "description": "Dünyanın en iyi korunan antik tiyatrolarından biri."}, {"category": "Plaj", "title": "Kaputaş & Konyaaltı", "description": "Kristal berraklığında turkuaz deniz ve plajlar."}]
+    "venueSummary": {
+        "badgeTitle": "ANTALYA ÖZEL REHBERİ",
+        "typeTitle": "Gezilecek Yerler ve Destinasyonlar",
+        "description": "Kaleiçi'nin dar sokaklarından Düden Şelalesi'ne, Kaputaş Plajı'ndan Aspendos ve Perge'ye uzanan büyüleyici Akdeniz rotası.",
+        "details": [
+            {
+                "label": "Bölge",
+                "value": "Türkiye"
+            },
+            {
+                "label": "Öne Çıkan",
+                "value": "Tarih, Kültür & Doğa"
+            },
+            {
+                "label": "İdeal Süre",
+                "value": "2-4 Gün"
+            }
+        ]
     },
-    transportation: {"title": "Antalya'ya Ulaşım Seçenekleri", "tip": "Antalyakart ile nostaljik tramvay ve Antray hatlarını rahatça kullanabilirsiniz.", "mapUrl": "https://maps.google.com/?q=Antalya+Turkey", "methods": [{"icon": "fa-solid fa-plane", "title": "Antalya Havalimanı", "detail": "Tramvay ve Havaş ile şehir merkezine doğrudan ulaşım."}, {"icon": "fa-solid fa-bus", "title": "Antalya Otogarı", "detail": "İlçelere ve çevre antik kentlere dolmuş ve otobüs imkanı."}]},
-    whereToStay: {
-        title: "Konaklama Önerileri",
-        hotels: [{"badge": "Lüks", "name": "Akra Hotel Antalya", "distance": "Lara Falezler Üzerinde", "link": "https://www.google.com/travel/hotels"}, {"badge": "Tarihi Butik", "name": "Tuvana Hotel Kaleiçi", "distance": "Kaleiçi Merkez", "link": "https://www.google.com/travel/hotels"}]
+    "overview": {
+        "title": "Antalya Genel Bakış",
+        "paragraphs": [
+            "Antalya; yılın 300 günü güneşli havası, kristal berraklığındaki turkuaz plajları ve binlerce yıllık Pamfilya antik kentleriyle dünya turizminin gözbebeğidir.",
+            "Yat limanında Akdeniz esintisini hissedebilir, Manavgat ve Kurşunlu şelalelerinde serinleyebilir ve Olympos'ta doğayla baş başa kalabilirsiniz."
+        ],
+        "visitorNotes": [
+            {
+                "label": "En İyi Zaman",
+                "value": "Nisan - Kasım Arası"
+            },
+            {
+                "label": "Ulaşım",
+                "value": "Antalyakart (Antray & Otobüs)"
+            },
+            {
+                "label": "Etkinlik",
+                "value": "Tekne Turu ve Likya Yolu Yürüyüşü"
+            }
+        ]
     },
-    whereToEat: {
-        title: "Nerede Ne Yenir?",
-        restaurants: [{"badge": "Yöresel Lezzet", "name": "7 Mehmet", "detail": "Antalya'nın Efsanevi Yöresel Mutfak Restoranı", "rating": "4.9"}, {"badge": "Piyaz", "name": "Piyazcı Ahmet", "detail": "Tahinli Meşhur Antalya Piyazı", "rating": "4.8"}]
+    "whyVisit": {
+        "title": "Antalya Keşif Rotaları",
+        "subtitle": "Şehrin en gözde mekanlarını tematik kategorilere göre keşfedin",
+        "cards": [
+            {
+                "icon": "fa-solid fa-landmark",
+                "title": "Tarihi Yerler",
+                "description": "Antalya'in köklü geçmişini yansıtan anıtlar, surlar ve müzeler.",
+                "linkText": "Tarihi Keşfet",
+                "url": "#must-see-items"
+            },
+            {
+                "icon": "fa-solid fa-city",
+                "title": "Modern Yerler",
+                "description": "Şehrin en hareketli caddeleri, modern meydanları ve kültür merkezleri.",
+                "linkText": "Moderni İncele",
+                "url": "#must-see-items"
+            },
+            {
+                "icon": "fa-solid fa-gem",
+                "title": "Sofistike Yerler",
+                "description": "Nezih kafeler, sanat galerileri ve özel konaklama mekanları.",
+                "linkText": "Sofistike Noktalar",
+                "url": "#where-to-stay-title"
+            },
+            {
+                "icon": "fa-solid fa-tree",
+                "title": "Doğal Güzellikler",
+                "description": "Parklar, kanyonlar, sahiller ve nefes kesen manzara seyir noktaları.",
+                "linkText": "Doğayı Gör",
+                "url": "#transport-title"
+            }
+        ]
+    },
+    "mustSee": {
+        "title": "Görülmesi Gereken Önemli Noktalar",
+        "items": [
+            {
+                "category": "Tarihi Şehir",
+                "title": "Kaleiçi & Üçkapılar",
+                "description": "Hadrian Kapısı ve Osmanlı dönemi cumbalı evler."
+            },
+            {
+                "category": "Doğa",
+                "title": "Düden & Kurşunlu Şelaleleri",
+                "description": "Denize dökülen doğa harikası çağlayanlar."
+            },
+            {
+                "category": "Antik Tiyatro",
+                "title": "Aspendos Antik Tiyatrosu",
+                "description": "Akustiği mükemmel korunmuş antik amfitiyatro."
+            },
+            {
+                "category": "Kanyon",
+                "title": "Köprülü Kanyon",
+                "description": "Rafting ve doğa sporlarının Türkiye merkezi."
+            }
+        ]
+    },
+    "transportation": {
+        "title": "Ulaşım Bilgileri",
+        "tip": "Şehir içi toplu taşıma kartlarını kullanarak tüm turistik mekanlara kolayca ulaşabilirsiniz.",
+        "mapUrl": "https://maps.google.com/?q=Antalya+Turkey",
+        "mapBgImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=80&fm=webp",
+        "methods": [
+            {
+                "icon": "fa-solid fa-plane",
+                "title": "Havalimanı Ulaşımı",
+                "detail": "Havaş ve belediye otobüs seferleri ile şehir merkezine rahat erişim."
+            },
+            {
+                "icon": "fa-solid fa-bus",
+                "title": "Şehirlerarası Otogar",
+                "detail": "Türkiye'nin tüm illerinden düzenli otobüs seferleri."
+            }
+        ]
+    },
+    "whereToStay": {
+        "title": "Konaklama Önerileri",
+        "hotels": [
+            {
+                "badge": "Lüks Resort",
+                "name": "Akra Hotel Antalya",
+                "distance": "Muratpaşa / Lara",
+                "link": "https://www.google.com/travel/hotels"
+            },
+            {
+                "badge": "Tarihi Konak",
+                "name": "Tuvana Hotel",
+                "distance": "Kaleiçi İçi",
+                "link": "https://www.google.com/travel/hotels"
+            }
+        ]
+    },
+    "whereToEat": {
+        "title": "Nerede Ne Yenir?",
+        "restaurants": [
+            {
+                "badge": "Akdeniz Balık",
+                "name": "7 Mehmet",
+                "detail": "Atatürk Kültür Parkı İçi",
+                "rating": "4.9"
+            },
+            {
+                "badge": "Yöresel Piyaz",
+                "name": "Piyazcı Ahmet",
+                "detail": "Muratpaşa Merkez",
+                "rating": "4.7"
+            }
+        ]
     }
 };

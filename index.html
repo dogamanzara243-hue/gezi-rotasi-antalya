@@ -23,12 +23,34 @@
 
 </head>
 <body class="min-h-screen flex flex-col justify-between">
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-extrabold text-xl text-slate-900"><i class="fa-solid fa-compass text-emerald-600 text-2xl"></i> Gezi Rotası</a>
-      <a href="#yerler" class="cta-affiliate-btn !w-auto !py-2 !px-4 text-xs">Rotaları Keşfet</a>
-    </div>
-  </header>
+      <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <nav class="flex items-center space-x-2 sm:space-x-3 text-sm font-medium">
+                <a href="javascript:history.back()" class="flex items-center text-slate-600 hover:text-theme transition-colors py-1 px-2.5 rounded-lg hover:bg-slate-100" title="Önceki Sayfaya Dön">
+                    <i class="fa-solid fa-arrow-left mr-2"></i>
+                    <span class="hidden sm:inline">Önceki Sayfa</span>
+                </a>
+                <span class="text-slate-300">/</span>
+                <a href="https://dogamanzara243-hue.github.io/gezi-rotasi/" class="flex items-center text-slate-600 hover:text-theme transition-colors p-1.5 rounded-lg hover:bg-slate-100" title="Ana Sayfaya Dön">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="ml-1.5 hidden md:inline">Ana Sayfa</span>
+                </a>
+                <span class="text-slate-300">/</span>
+                <span id="breadcrumb-city" class="text-slate-500 font-normal">İstanbul</span>
+                <span class="text-slate-300">/</span>
+                <span id="breadcrumb-title" class="text-theme-dark font-semibold truncate max-w-[140px] sm:max-w-none"></span>
+            </nav>
+
+            <div class="flex items-center space-x-1 sm:space-x-2">
+                <button id="btn-favorite" class="p-2 text-slate-500 hover:text-rose-500 hover:bg-rose-50 rounded-full transition-all" title="Favorilere Ekle">
+                    <i class="fa-regular fa-heart text-lg"></i>
+                </button>
+                <button id="btn-share" class="p-2 text-slate-500 hover:text-theme hover:bg-slate-100 rounded-full transition-all" title="Sayfayı Paylaş">
+                    <i class="fa-solid fa-share-nodes text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
   <div class="max-w-7xl mx-auto px-4 w-full pt-4">
     <div class="ad-banner-top"><span>— Reklam Alanı (970x90) —</span></div>

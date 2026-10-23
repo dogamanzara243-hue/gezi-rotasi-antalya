@@ -72,30 +72,30 @@ const SPOT_DATA = {
             {
                 "icon": "fa-solid fa-landmark",
                 "title": "Tarihi Yerler",
-                "description": "Antalya'in köklü geçmişini yansıtan anıtlar, surlar ve müzeler.",
-                "linkText": "Tarihi Keşfet",
-                "url": "#must-see-items"
+                "description": "Köklü geçmişi ve medeniyet izlerini taşıyan tarihi yapılar ve anıtlar.",
+                "linkText": "Tarihi Yerler İncele",
+                "url": "https://dogamanzara243-hue.github.io/gezi-rotasi-antalya-tarihi-yerler/"
             },
             {
                 "icon": "fa-solid fa-city",
                 "title": "Modern Yerler",
-                "description": "Şehrin en hareketli caddeleri, modern meydanları ve kültür merkezleri.",
-                "linkText": "Moderni İncele",
-                "url": "#must-see-items"
+                "description": "Şehrin hareketli meydanları, alışveriş merkezleri ve modern yapıları.",
+                "linkText": "Modern Yerler İncele",
+                "url": "https://dogamanzara243-hue.github.io/gezi-rotasi-antalya-modern-yerler/"
             },
             {
                 "icon": "fa-solid fa-gem",
                 "title": "Sofistike Yerler",
-                "description": "Nezih kafeler, sanat galerileri ve özel konaklama mekanları.",
-                "linkText": "Sofistike Noktalar",
-                "url": "#where-to-stay-title"
+                "description": "Seçkin kafeler, sanat galerileri ve nezih buluşma noktaları.",
+                "linkText": "Sofistike Yerler İncele",
+                "url": "https://dogamanzara243-hue.github.io/gezi-rotasi-antalya-sofistike-yerler/"
             },
             {
                 "icon": "fa-solid fa-tree",
                 "title": "Doğal Güzellikler",
-                "description": "Parklar, kanyonlar, sahiller ve nefes kesen manzara seyir noktaları.",
-                "linkText": "Doğayı Gör",
-                "url": "#transport-title"
+                "description": "Parklar, sahil şeritleri, kanyonlar ve nefis manzara noktaları.",
+                "linkText": "Doğal Güzellikler İncele",
+                "url": "https://dogamanzara243-hue.github.io/gezi-rotasi-antalya-dogal-guzellikler/"
             }
         ]
     },
